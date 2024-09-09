@@ -1,0 +1,1 @@
+find the models trained on headSET [here](https://www.kaggle.com/models/faihajalamtopu/yolov10/)
