@@ -1,0 +1,18 @@
+train: /kaggle/input/headset/train/images
+val: /kaggle/input/headset/valid/images
+test: /kaggle/input/headset/test/images
+
+nc: 1
+names: ['head']
+
+# Data augmentation settings
+augment:
+  - rotate: 15         # Rotate images between 0 and 15 degrees
+  - hsv_h: 0.05      # Adjust hue by 1.5% to 5%
+  - hsv_s: 0.7         # Adjust saturation by 50% to 70%
+  - hsv_v: 0.4         # Adjust brightness by 30% to 40%
+  - mosaic: 1.0            # Always enable mosaic augmentation
+  - mixup: 0.3         # Blend 20% to 50% of the image content
+  - perspective: 0.5   # Apply small perspective changes, up to 50%
+  - cutout: 0.2        # Mask up to 30% of the image
+  - gn: 0.05           # Add small Gaussian noise
